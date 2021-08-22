@@ -12,33 +12,103 @@ header {
   padding-top: 10px;
 }
 
-header .btn {
-  text-decoration: none;
-  background: #f59a00;
-  color: #fff;
-  display: block;
-  width: 140px;
-  line-height: 44px;
+header {
+  display: flex;
+  padding: 0 16px;
+}
+
+header h1 {
   margin: 0;
-  font-size: 14px;
-  font-weight: bold;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  opacity: 0.6;
+  font-size: 22px;
+  line-height: 64px;
 }
 
 
-header h1,
-header p {
+.sp-menu {
+  margin-left: auto;
+}
+
+.sp-menu #open {
+  font-size: 32px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.sp-menu #open.hide {
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.overlay ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay li {
+  margin-top: 24px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .3s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .6s;
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: .9s;
+}
+
+.pc-menu {
+  display: none;
+}
+
+.first-pic p {
   margin: 16px;
+  text-align: center;
+  font-size: 14px;
+  color: #f59a00;
 }
 
-
-header img {
+.first-pic img {
+  margin: 0;
   width: 100%;
-  vertical-align: bottom;
 }
 
 
@@ -116,10 +186,10 @@ footer {
   text-align: center;
 }
 
-/* @media (min-width: 900px) {
+@media (min-width: 900px) {
 
   .features .container {
-    width: 100%;
+    width: 800px;
     margin: 0 auto;
   }
 
@@ -141,14 +211,13 @@ footer {
   }
 
   .members ul {
-
-    width: 100%;
-    margin: 0 32px;
+    width: 800px;
+    margin: 0 auto;
     display: flex;
-    justify-content: 1 1 1;
+    justify-content: space-between;
   }
 
   .members li {
     width: 250px;
   }
-} */
+}

@@ -5,29 +5,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ホームページ作成練習</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <!-- <link rel="icon" href="favicon.ico"> -->
   <link rel="icon" href="mouse.png">
 </head>
 <body>
+</head>
+<body>
   <header>
-    <div class="container">
-      <div>
-        <a href="" class="btn">menu</a>
-      </div>
-      <div class="info">
-        <h1>Website for practice</h1>
-        <p>web制作エンジニアを目指して勉強を開始します</p>
-      </div>
+    <div class="logo">
+      <h1>Website for practice</h1>
     </div>
+    
+    <div class="pc-menu">
+      <nav>
+        <ul>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="sp-menu">
+      <span class="material-icons" id="open">menu</span>
+    </div>
+    
+  </header>
+  
+  
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li><a href="https://soichitakaya.github.io/omikuji/">おみくじ</a></li>
+        <li><a href="https://soichitakaya.github.io/slot/">スロットマシーン</a></li>
+        <li><a href="https://soichitakaya.github.io/history">プログラミング履歴</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <section class="first-pic">
+    <p>web制作エンジニアを目指して勉強を開始します</p>
     <div class="pic">
       <img src="img/garden.png">
     </div>
-  </header>
+  </section>
   
   <section class="features">
     <h1>ボストン旅行</h1>
-
+    
     <div class="container">
       <section>
         <div class="pic">
@@ -84,9 +112,11 @@
     </ul>
   </section>
 
-
   <footer>
     (c) 2021 Soichi Takaya
   </footer>
+
+  <script src="js/main.js"></script>
+
 </body>
 </html>
