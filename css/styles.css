@@ -116,10 +116,9 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 900px) {
+/* @media (min-width: 900px) {
 
   .features .container {
-    /* width: 800px; */
     width: 100%;
     margin: 0 auto;
   }
@@ -142,7 +141,7 @@ footer {
   }
 
   .members ul {
-    /* width: 800px; */
+
     width: 100%;
     margin: 0 32px;
     display: flex;
@@ -152,4 +151,4 @@ footer {
   .members li {
     width: 250px;
   }
-}
+} */
